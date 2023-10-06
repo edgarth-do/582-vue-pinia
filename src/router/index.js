@@ -1,11 +1,29 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import VendorView from "../views/VendorView.vue";
+import InventoryView from "../views/InventoryView.vue";
+import ConsumerView from "../views/ConsumerView.vue";
 
 const routes = [
   {
     path: "/",
     name: "home",
     component: HomeView,
+  },
+  {
+    path: "/vendor",
+    name: "vendor",
+    component: VendorView,
+  },
+  {
+    path: "/inventory",
+    name: "inventory",
+    component: InventoryView,
+  },
+  {
+    path: "/consumer",
+    name: "consumer",
+    component: ConsumerView,
   },
   {
     path: "/about",

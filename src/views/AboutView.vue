@@ -8,22 +8,14 @@
     <h2>Students</h2>
     <p>{{ school.students }}</p>
     <ul>
-      <li
-        @click="school.addStudent(student)"
-        v-for="student in students"
-        :key="student.id"
-      >
+      <li @click="school.addStudent(student)" v-for="student in students" :key="student.id">
         {{ student.name }} - {{ student.age }}
       </li>
     </ul>
     <h2>Teachers</h2>
     <p>{{ school.teachers }}</p>
     <ul>
-      <li
-        @click="school.addTeacher(teacher)"
-        v-for="teacher in teachers"
-        :key="teacher.id"
-      >
+      <li @click="school.addTeacher(teacher)" v-for="teacher in teachers" :key="teacher.id">
         {{ teacher.name }} - {{ teacher.age }}
       </li>
     </ul>
@@ -69,7 +61,9 @@ export default {
     },
   },
   created() {
-    fetch("https://jsonplaceholder.typicode.com/users")
+    fetch(
+      "mongodb+srv://ed2295:m1l8m1lwdes@mongodemo.xasq0fi.mongodb.net/?retryWrites=true&w=majority"
+    )
       .then((response) => response.json())
       .then((json) => {
         console.log(json);
