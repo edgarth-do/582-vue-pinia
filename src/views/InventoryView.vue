@@ -76,7 +76,7 @@ export default {
   },
   /*load() {
       fetch(
-        "mongodb+srv://ed2295:m1l8m1lwdes@mongodemo.xasq0fi.mongodb.net/?retryWrites=true&w=majority"
+        "mongodb+srv://ed2295:m1l8m1lwdes@cluster0.amcrano.mongodb.net/?retryWrites=true&w=majority"
       )
         .then((response) => response.json())
         .then((json) => {
