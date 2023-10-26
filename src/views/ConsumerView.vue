@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import RoomBox from "./components/RoomBox.vue";
+import RoomBox from "@/components/RoomBox.vue";
 export default {
   name: "ConsumerView",
   components: {

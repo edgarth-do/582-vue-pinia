@@ -23,7 +23,9 @@
             <td><button @click="counter.increment()">+</button></td>
             <td><button @click="counter.decrement()">-</button></td>
             <td>
-              <span><input type="number" :value="counter.count" min="0" /></span>
+              <span
+                ><input type="number" :value="counter.count" min="0"
+              /></span>
             </td>
             <td><img alt="material image" src="../assets/materials.png" /></td>
             <td>{{ item.material }}</td>
